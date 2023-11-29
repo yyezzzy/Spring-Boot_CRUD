@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<form action="/member/main" method="post">
+    <label class="option"><h3><p th:text="${session.loginEmail}"></p> 님 반갑습니다 !</h3></label>
+    <label class="option2"><a href="/member/update"><h3>내 정보 수정하기</h3></a></label>
+    <label class="option2"><a href="/member/logout"><h3>로그아웃</h3></a></label>
+</form>
+</body>
+</html>

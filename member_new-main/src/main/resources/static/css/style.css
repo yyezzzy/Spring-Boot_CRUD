@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+body {
+    background: #0499FC;
+    /*background: #036;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body.type02 {
+    /*background: #027DC3;*/
+    background: #036;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+*{
+    font-family: 'Gowun Dodum', sans-serif;
+    box-sizing: border-box;
+}
+
+form {
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+form.index {
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h2.type02 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 1px 20px 1px 20px;
+    color: white;
+    background-color: #036;
+}
+
+h3 {
+    text-align: center;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 5px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+p {
+    padding: 0px;
+    margin: 0px;
+}
+label {
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+}
+label.title {
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+label.option {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+label.option2 {
+    display: block;
+    width: 95%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+table.type09 {
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 1.5;
+    width: auto;
+}
+table.type09 thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    /*background: #E0EFF8;*/
+    background: #0499FC;
+    /*color: #369;*/
+    color: white;
+    border-bottom: 3px solid #000000;
+}
+table.type09 tbody th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 3px solid #000000;
+    background: #0499FC;
+}
+table.type09 td {
+    width: auto;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #000000;
+    /*background: #f3f6f7;*/
+    background: white;
+}
+button {
+    float: right;
+    background: #555;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    font-family: 'Poor Story', cursive;
+}
+button:hover{
+    opacity: .7;
+}
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.success {
+    background: #D4EDDA;
+    color: #40754C;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.ca {
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+}
+.ca:hover {
+    text-decoration: underline;
+}

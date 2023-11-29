@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body class="type02">
+<img src="/images/bum2.jpg" width="25%" style="margin-bottom: 10px" th:onclick="|location.href='@{/member/index}'|">
+<h2 class="type02">회 원 목 록</h2>
+  <table class="type09" border="1">
+    <thead>
+    <tr>
+      <th>회원번호</th>
+      <th>이메일</th>
+      <th>비밀번호</th>
+      <th>이름</th>
+      <th>주소</th>
+      <th>상세조회</th>
+      <th>삭제</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="member: ${memberList}">
+      <td th:text="${member.id}"></td>
+      <td th:text="${member.memberEmail}"></td>
+      <td th:text="${member.memberPassword}"></td>
+      <td th:text="${member.memberName}"></td>
+      <td th:text="${member.roadAddr}"></td>
+      <td>
+        <!-- query string /member?id=1
+            rest api /member/1 -->
+        <a th:href="@{|/member/${member.id}|}">조회</a>
+      </td>
+      <td>
+        <a th:href="@{|/member/delete/${member.id}|}">삭제</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>
